@@ -9,6 +9,11 @@ set colorcolumn=80
 set nowrap
 highlight ColorColumn ctermbg=238
 
+" reloads file
+set autoread
+au CursorHold,CursorHoldI * checktime
+au FocusGained,BufEnter * :checktime
+
 "-----------------
 "NEWTRW
 "-----------------
