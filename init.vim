@@ -57,3 +57,11 @@ let mapleader = " "
 "enable/disable highlight 
 :nnoremap <Leader>h :set hls<CR>
 :nnoremap <Leader>H :nohl<CR>
+
+"run JS files 
+"NodeJS
+:nnoremap <Leader>rn :!node<Space>%<CR>
+"npm test script
+:nnoremap <Leader>rt :!npm<Space>run<Space>test<CR>
+"npm dev script
+:nnoremap <Leader>rd :!npm<Space>run<Space>dev<CR>
