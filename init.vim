@@ -63,6 +63,7 @@ let mapleader = " "
 
 "copy/paste from clipboard
 nnoremap <Leader>y <Esc>"+y
+nnoremap <Leader>Y <Esc>"+Y
 nnoremap <Leader>p <Esc>"+p
 nnoremap <Leader>P <Esc>"+P
 vmap <Leader>y "+y
