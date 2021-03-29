@@ -4,6 +4,8 @@
 set nu
 set smartcase 
 set shiftwidth=4
+set tabstop=4
+set expandtab
 set smartindent
 set colorcolumn=80
 set nowrap
@@ -30,6 +32,7 @@ call plug#begin('~/.config/nvim/plugged')
 Plug 'jiangmiao/auto-pairs'
 Plug 'tpope/vim-surround'
 Plug 'ycm-core/YouCompleteMe'
+Plug 'sheerun/vim-polyglot'
 "close definition preview window
 let g:ycm_autoclose_preview_window_after_insertion = 1
 
@@ -57,6 +60,12 @@ let mapleader = " "
 "enable/disable highlight 
 :nnoremap <Leader>h :set hls<CR>
 :nnoremap <Leader>H :nohl<CR>
+
+"copy/paste from clipboard
+nnoremap <Leader>y <Esc>"+y
+nnoremap <Leader>p <Esc>"+p
+nnoremap <Leader>P <Esc>"+P
+vmap <Leader>y "+y
 
 "run JS files 
 "NodeJS
