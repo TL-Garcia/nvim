@@ -54,12 +54,11 @@ let mapleader = " "
 :nnoremap <Leader>B :bp<CR>
 
 "enable/disable spelling
-:nnoremap <Leader>s :set<Space>spell<CR>
-:nnoremap <Leader>S :set<Space>nospell<CR>
+:nnoremap <Leader>s :set<Space>invspell<CR>
 
 "enable/disable highlight 
-:nnoremap <Leader>h :set hls<CR>
-:nnoremap <Leader>H :nohl<CR>
+:nnoremap <Leader>h :set invhls<CR>
+
 
 "copy/paste from clipboard
 nnoremap <Leader>y <Esc>"+y
