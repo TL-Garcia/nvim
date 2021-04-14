@@ -1,20 +1,25 @@
 "-----------------
 "SETTINGS
 "-----------------
+" Numbers
 set nu
+set relativenumber
+
+" Search
 set smartcase 
-set shiftwidth=4
-set tabstop=4
+set ignorecase
+
+" Tabs
+set shiftwidth=2
+set tabstop=2
 set expandtab
 set smartindent
+
+" Page margins
 set colorcolumn=80
 set nowrap
+set scrolloff=8
 highlight ColorColumn ctermbg=238
-
-" reloads file
-set autoread
-au CursorHold,CursorHoldI * checktime
-au FocusGained,BufEnter * :checktime
 
 "-----------------
 "NEWTRW
@@ -37,11 +42,6 @@ Plug 'sheerun/vim-polyglot'
 let g:ycm_autoclose_preview_window_after_insertion = 1
 
 call plug#end()
-
-
-"-----------------
-"THEME
-"-----------------
 
 "-----------------
 "REMAPS
