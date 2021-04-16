@@ -74,3 +74,5 @@ vmap <Leader>y "+y
 :nnoremap <Leader>rt :!npm<Space>run<Space>test<CR>
 "npm dev script
 :nnoremap <Leader>rd :!npm<Space>run<Space>dev<CR>
+"format file
+:nnoremap <Leader>f :!npx<Space>prettier<Space>%<Space>--write<CR>
